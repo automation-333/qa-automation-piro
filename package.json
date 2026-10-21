@@ -1,0 +1,22 @@
+{
+  "name": "qa-automation-piro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Учебный проект QA-автоматизации: Playwright UI + API тесты",
+  "scripts": {
+    "api": "node mock-api/server.js",
+    "test": "playwright test",
+    "test:ui": "playwright test --project=ui --project=mobile",
+    "test:api": "playwright test --project=api",
+    "report": "playwright show-report"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  }
+}
